@@ -1,0 +1,261 @@
+.section-features {
+  margin-top: 7rem;
+  //   padding: 3rem;
+  padding-top: 8rem;
+
+  // @include response(tab-port) {
+  //   // width < 900?
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   grid-gap: 2rem;
+  //   padding: 2rem;
+  // }
+
+  // @include response(phone) {
+  //   // width < 900?
+  //   display: grid;
+  //   grid-template-columns: repeat(1, 1fr);
+  //   grid-gap: 2rem;
+  //   padding: 1rem;
+  // }
+}
+
+.features-media {
+  display: flex;
+
+  @include response(phone) {
+    // width < 900?
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    padding: 1rem;
+  }
+}
+
+.features-box {
+  text-align: center;
+  padding: 1.2rem;
+  margin: 1.4rem;
+  position: relative;
+  // background-color: grey;
+  transition: all 0.2s;
+
+  @include response(phone) {
+    // width < 900?
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    transition: all 0.9s ease;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transition: all 0.9s ease;
+  }
+
+  &:hover {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.137);
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &--icon {
+    font-size: 3.2rem;
+    color: $color-grey-light-3;
+    transition: all 0.9s ease;
+  }
+
+  &--heading {
+    color: $color-black;
+  }
+
+  &-paragraph {
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+    color: $color-grey-light-3;
+  }
+}
+
+.inner-core:hover .features-box::after,
+.inner-core:hover .features-box::before {
+  border-color: $color-primary;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-core:hover .features-box .features-box--icon {
+  color: $color-primary;
+}
+
+// ABOUT SECTION (SHOWCASE)
+.about {
+  background-color: $color-grey-light-2;
+  padding: 4rem 8rem;
+
+  @include response(phone) {
+    padding: 1rem 2rem;
+  }
+
+  &-media {
+    @include response(phone) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  &__box {
+    position: relative;
+
+    &-img {
+      width: 100%;
+      margin-top: 3rem;
+
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      padding: 3rem;
+      border-radius: 0.4rem;
+      border: 1.3px solid $color-primary;
+
+      transition: all 0.2s;
+
+      @include response(tab-port) {
+        width: 100%;
+      }
+
+      @include response(phone) {
+        width: 100%;
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &__text {
+    margin-top: 10rem;
+    text-align: center;
+
+    @include response(phone) {
+      margin: 0;
+      text-align: center;
+    }
+
+    &--para {
+      font-size: 160%;
+
+      @include response(phone) {
+        font-size: 160%;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__text:first-child {
+    margin-top: 16rem;
+
+    @include response(tab-port) {
+      margin-bottom: 15rem;
+    }
+
+    @include response(phone) {
+      margin-top: 8rem;
+    }
+  }
+}
+
+// section testemonial (carousel)
+.carousel-container {
+  height: 80vh;
+  padding-top: 10rem;
+  background-color: $color-grey-light-1;
+
+  @include response(phone) {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.container-box {
+  @include response(phone) {
+    // height: 80%;
+  }
+}
+
+.realStories {
+  background-color: $color-black-light;
+  margin-top: 10rem;
+  padding: 4rem 8rem;
+
+  @include response(phone) {
+    padding: 1rem 2rem;
+  }
+
+  &-story {
+    @include response(phone) {
+      display: grid;
+      grid-template-columns: repeat(250px, 1fr);
+      grid-gap: 2rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  &__text {
+    margin-top: 2rem;
+
+    & h2 {
+      letter-spacing: 2px;
+      margin-top: 2rem;
+    }
+
+    & p {
+      padding: 1.2rem;
+      font-size: 1.7rem;
+      color: $color-white;
+    }
+  }
+
+  &__box {
+    position: relative;
+
+    &-img {
+      width: 100%;
+
+      margin-top: 3rem;
+
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      padding: 3rem;
+      border-radius: 0.4rem;
+      border: 1.3px solid $color-primary;
+
+      transition: all 0.2s;
+
+      @include response(tab-port) {
+        width: 100%;
+      }
+
+      @include response(phone) {
+        width: 100%;
+
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

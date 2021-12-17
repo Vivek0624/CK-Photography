@@ -1,0 +1,97 @@
+/*
+COLORS:
+
+
+*/
+
+// Colors
+
+:root {
+  --color-white: #fff;
+  --color-white-1: #dfdfe5;
+  --color-black: #000;
+  --color-grey-light: #ccc;
+  --color-grey-dark: #333;
+  --color-grey-dark-1: #555;
+  --color-red-light: #ff005c;
+  // --color-red-light: #ffa600c7;
+
+  --color-red-light-1: #df3c77;
+  --color-orange-light: #cd492f;
+  --color-blue-light: #4862a0;
+  --color-perple-light: #833ab4;
+
+  --color-text-dark: #1e212d;
+  --color-text-light: #f9f3f3;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* // 1rem = 10px, 10px/16px = 62.5%   */
+
+  @include response(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; // 1 rem = 9px, 9/16 = 50%
+  }
+
+  @include response(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include response(big-desktop) {
+    font-size: 75%; // 1 rem = 12, 12/16
+  }
+}
+
+hr {
+  color: var(--color-white);
+  height: 1px;
+
+  margin: 2rem 8rem 2rem 8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+::selection {
+  background-color: $color-primary-dark;
+  color: $color-white;
+}
+
+#preloader {
+  // background: $color-grey-light-2 url(../img/loader.gif) no-repeat center center;
+  // background: #c7206bdc url(../img/loader.gif) no-repeat center center;
+  background: #ff6600 url(../img/loader.gif) no-repeat center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+}

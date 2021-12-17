@@ -1,0 +1,83 @@
+// Footer
+
+.footer {
+  background-color: rgb(39, 37, 37);
+  padding: 1.2rem;
+}
+
+.footer__nav {
+  padding: 1.4rem;
+  font-size: 140%;
+
+  &--links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem;
+
+    @include response(tab-port) {
+      // width < 900?
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      padding: 2rem;
+    }
+
+    @include response(phone) {
+      // width < 900?
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2rem;
+      padding: 1rem;
+    }
+  }
+
+  &--social-icon {
+    margin-left: 4rem;
+    // height: 2rem;
+    // background-color: black;
+    color: $color-white;
+
+    @include response(tab-port) {
+      // width < 900?
+      margin-left: 2.6rem;
+    }
+
+    @include response(phone) {
+      // width < 900?
+      margin-left: 2.1rem;
+    }
+
+    & a {
+      color: white;
+      transition: all 0.1s;
+
+      & svg {
+        margin: 0.2rem 0 6rem 2rem;
+      }
+    }
+
+    & a:hover {
+      color: var(--color-grey-light);
+    }
+  }
+
+  &--links li {
+    padding: 0.4rem;
+  }
+
+  &--links a {
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 120%;
+    transition: all 0.1s;
+  }
+
+  &--links a:hover {
+    color: var(--color-grey-light);
+  }
+
+  &--text {
+    color: $color-white;
+    text-align: center;
+  }
+}

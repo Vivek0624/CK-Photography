@@ -1,0 +1,164 @@
+.header {
+  //   width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+
+  // background-image: linear-gradient(
+  //     To right bottom,
+  //     rgba($color-black, 0.7),
+  //     rgba($color-grey-light-3, 0.6)
+  //   ),
+  //   url(../img/img5.jpg);
+
+  animation: animate 16s ease-in-out infinite;
+  // animation-fill-mode: backwards;
+  // animation: animate 16s ease-in-out infinite;
+
+  &--outer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+      To right bottom,
+      rgba($color-black, 0.7),
+      rgba($color-grey-light-3, 0.6)
+    );
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 2.1rem;
+    left: 5rem;
+    z-index: 1;
+
+    @include response(tab-port) {
+      // width  600px
+      top: 3.3rem;
+      left: 1.6rem;
+    }
+  }
+
+  &__logo {
+    height: 12rem;
+    // height: 100%;
+    cursor: pointer;
+
+    @include response(tab-port) {
+      // width  600px
+      height: 8rem;
+      margin-left: 1.3rem;
+    }
+  }
+
+  &__text-box {
+    color: $color-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+// WhatsApp
+
+.whatsapp {
+  background: green;
+  border-radius: 50px;
+  height: 5rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 6%;
+  right: 4%;
+  cursor: pointer;
+  // box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.452);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.452);
+  z-index: 20;
+
+  animation-name: moveInBotton;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  & a {
+    color: #fff;
+    font-size: $default-font-size;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: border-bottom 10s ease-in-out;
+
+    // margin-right: 1rem;
+  }
+
+  & i {
+    // color: white;
+    margin-left: 1rem;
+  }
+
+  & a:hover {
+    // border-bottom: 1px solid white;
+    border-width: 1px;
+  }
+}
+
+// Section Call to Action (CTA)
+
+.cta {
+  margin: 8rem auto;
+  width: 80%;
+  background-image: linear-gradient(
+      To right bottom,
+      rgba($color-black, 0.7),
+      rgba($color-grey-light-3, 0.6)
+    ),
+    url(../img/ck/wedding/1Q0A3676.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 8rem 0;
+
+  --border-width: 3px;
+
+  position: relative;
+
+  border-radius: var(--border-width);
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+.cta h1 {
+  color: $color-white;
+  margin-bottom: 4rem;
+  font-size: 3.5rem;
+  // width: 100%;
+  padding: 0;
+}

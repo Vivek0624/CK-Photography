@@ -1,0 +1,64 @@
+.carousel-container {
+  background-color: $color-white;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.carousel-item {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: transform 2s ease-in-out, opacity 0.5s ease;
+
+  & .container-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    & h2 {
+      font-size: 3rem;
+      color: $color-black;
+      margin: 0 0 2rem;
+
+      @include response(phone) {
+        font-size: $default-font-size;
+        margin: 0;
+      }
+    }
+
+    & p {
+      font-size: $default-font-size;
+      margin: 0;
+      color: $color-black;
+
+      @include response(phone) {
+        margin: 1rem;
+      }
+    }
+  }
+
+  & .container-box h2::after {
+    content: "\201C";
+    font-size: 10rem;
+    display: block;
+    position: absolute;
+    top: -80px;
+    left: -40px;
+  }
+
+  & .container-box p::after {
+    content: "\201D";
+    font-size: 10rem;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: -40px;
+  }
+}
+
+.bug {
+  z-index: 10;
+}
