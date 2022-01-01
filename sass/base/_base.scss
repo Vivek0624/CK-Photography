@@ -88,10 +88,13 @@ ul {
 #preloader {
   // background: $color-grey-light-2 url(../img/loader.gif) no-repeat center center;
   // background: #c7206bdc url(../img/loader.gif) no-repeat center center;
-  background: #ff6600 url(../img/loader.gif) no-repeat center center;
+  // background: #ff6600 url(../img/loader.gif) no-repeat center center;
+  background: #ffffff url(../img/logo2.png) no-repeat center center;
   background-size: 30%;
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 10000;
+
+  animation: fadeOut ease-out 6s;
 }

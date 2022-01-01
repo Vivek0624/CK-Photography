@@ -149,9 +149,10 @@
   }
 
   @include response(phone) {
-    top: 97%;
-    left: 12%;
-    font-size: 3rem;
+    // top: 97%;
+    // left: 12%;
+    // font-size: 3rem;
+    display: none;
   }
 }
 

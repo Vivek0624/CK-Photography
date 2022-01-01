@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+    <!-- FancyBox CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
     <!-- BOOTSTRAP 5 -->
     <!-- <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css"> -->
     <!-- BOOTSTRAP 5 CDN -->
@@ -16,12 +24,13 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="vendors/icon-font.css">
-    <!-- Our stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+
     <!-- Google fonts 'Lato' -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap"
         rel="stylesheet">
+    <!-- Our stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Photographic || World</title>
 </head>
 
@@ -54,6 +63,17 @@
             </ul>
         </nav>
     </div>
+
+    <div class="mainSocilaNav">
+        <div class="whatsappNav" target="https://wa.me/+919689695303">
+            <a href="https://wa.me/+919689695303" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="instagramNav" target="https://wa.me/+919689695303">
+            <a href="https://www.instagram.com/ck_fotografy/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
 
 
     <header class="VideoHeader">
@@ -169,32 +189,55 @@
             <img src="img/photography/close.png" class="close-btn" onclick="stopVideo()">
         </div>
     </section>
-    <!-- 
-    <section class="youtube-animation">
-        <div class="containerBx">
-            <div class="box">
-                <div class="imgBx">
-                    <img src="/img/123.jpg" alt="Image">
-                </div>
-                <div class="contentBx">
-                    <h2>Tilt Box Hover Effects</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem debitis excepturi asperiores,
-                        laboriosam hic ipsam est nesciunt quam tempora.</p>
-                </div>
+
+    <!-- ///////////////////////////////////////////////////////////////////////////  -->
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ck/wedding/101.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/ck/wedding/101.jpg" width="100%" height="100%" alt="">
+                </a>
             </div>
 
-            <div class="box">
-                <div class="imgBx">
-                    <img src="/img/img4.jpg" alt="Image">
-                </div>
-                <div class="contentBx">
-                    <h2>Tilt Box Hover Effects</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem debitis excepturi asperiores,
-                        laboriosam hic ipsam est nesciunt quam tempora.</p>
-                </div>
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ck/pre-wedding/0Z0A0400 (1).jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/ck/pre-wedding/0Z0A0400 (1).jpg" width="100%" height="100%" alt="">
+                </a>
             </div>
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ck/pre-wedding/0Z0A0413.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/ck/pre-wedding/0Z0A0413.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ck/pre-weddingLong/1Q0A7757.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/ck/pre-weddingLong/1Q0A7757.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ck/pre-weddingLong/6-min.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/ck/pre-weddingLong/6-min.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ck/pre-weddingLong/1Q0A7757.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/ck/pre-weddingLong/1Q0A7757.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+
         </div>
-    </section> -->
+    </div>
+
+
+    <!-- ///////////////////////////////////////////////////////////////////////////  -->
 
 
 
@@ -212,21 +255,41 @@
             </nav>
             <!-- filter images  -->
             <div class="gallery-fl">
-                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/IMG_2835-min.JPG" alt=""></span>
+                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/101.jpg" alt=""></span>
                 </div>
 
-                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0172.JPG" alt=""></span></div>
-                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0189.JPG" alt=""></span></div>
-                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0291.JPG" alt=""></span></div>
-                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0319.JPG" alt=""></span></div>
-                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0479.JPG" alt=""></span></div>
-                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0765.JPG" alt=""></span></div>
+
+                <!-- pre-wedding  photo 1  -->
+
+                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0400 (1).jpg"
+                            alt=""></span></div>
+
+                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0413.jpg"
+                            alt=""></span></div>
+
+
+                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0471.jpg"
+                            alt=""></span></div>
+
+
+                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0599.jpg"
+                            alt=""></span></div>
+
+
+
+
+
+
+
                 <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0772.JPG" alt=""></span></div>
                 <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A1656-min.JPG" alt=""></span>
                 </div>
                 <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A1661-min.JPG" alt=""></span>
                 </div>
                 <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A2388.JPG" alt=""></span></div>
+
+
+
                 <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A2401.JPG" alt=""></span></div>
 
 
@@ -263,19 +326,6 @@
 
 
 
-                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0400 (1).jpg"
-                            alt=""></span></div>
-
-                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0413.jpg"
-                            alt=""></span></div>
-
-
-                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0471.jpg"
-                            alt=""></span></div>
-
-
-                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0599.jpg"
-                            alt=""></span></div>
 
 
                 <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0615.jpg"
@@ -284,6 +334,14 @@
 
                 <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0741.jpg"
                             alt=""></span></div>
+
+
+                <!-- weeding photos 1 -->
+
+                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0172.JPG" alt=""></span></div>
+                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0189.JPG" alt=""></span></div>
+                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0291.JPG" alt=""></span></div>
+
 
 
                 <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A0797.jpg"
@@ -304,6 +362,13 @@
 
                 <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A8520.jpg"
                             alt=""></span></div>
+
+
+                <!-- weeding photo 2  -->
+                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0319.JPG" alt=""></span></div>
+                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0479.JPG" alt=""></span></div>
+                <div class="image" data-name="Wedding"><span><img src="img/ck/wedding/0Z0A0765.JPG" alt=""></span></div>
+
 
 
                 <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/0Z0A8954.jpg"
@@ -349,8 +414,8 @@
                 <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/1Q0A7575.jpg"
                             alt=""></span></div>
 
-                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/1Q0A7686.jpg"
-                            alt=""></span></div>
+                <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/12345.jpg" alt=""></span>
+                </div>
 
                 <div class="image" data-name="Pre-wedding"><span><img src="img/ck/pre-wedding/1Q0A7710.jpg"
                             alt=""></span></div>
@@ -516,6 +581,12 @@
                 <span class="icon fas fa-times"></span>
             </div>
             <div class="image-box">
+                <!-- <div class="slide prev">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="slide next">
+                    <i class="fas fa-angle-right"></i>
+                </div> -->
                 <img src="" alt="">
             </div>
         </div>
@@ -600,7 +671,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- 
     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
@@ -608,7 +679,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
         integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     <script src="js/photography.js"></script>
 
