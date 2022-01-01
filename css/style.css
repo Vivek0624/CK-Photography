@@ -91,13 +91,13 @@ ul {
 @keyframes animate {
   0%,
   100% {
-    background-image: url(../../img/ck/wedding/101.jpg); }
+    background-image: url(../img/ck/wedding/101.jpg); }
   75% {
-    background-image: url(../../img/ck/pre-wedding/1-min.jpg); }
+    background-image: url(../img/ck/pre-wedding/1-min.jpg); }
   50% {
-    background-image: url(../../img/ck/wedding/0Z0A1661-min.jpg); }
+    background-image: url(../img/ck/wedding/0Z0A1661-min.jpg); }
   25% {
-    background-image: url(../../img/ck/wedding/0Z0A1656-min.jpg); } }
+    background-image: url(../img/ck/wedding/0Z0A1656-min.jpg); } }
 
 @keyframes moveInLeft {
   0% {
@@ -1078,13 +1078,16 @@ body {
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc(
+ 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc(
+ 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc(
+ 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .section-features {
   margin-top: 7rem;
